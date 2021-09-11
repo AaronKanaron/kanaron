@@ -146,6 +146,8 @@ article{
         text-align: left;
         font-variant: normal;
         font-weight: 500;
+
+		
     }
 
 	h2{
@@ -155,7 +157,32 @@ article{
 		font-weight: 400;
 		padding-top: 3rem;
 		padding-bottom: .5rem;
+		display: table; 
 		// font-variant: small-caps;
+
+		&:hover span{
+			visibility: visible;
+			opacity: 1;
+		}
+
+		span{
+			visibility: hidden;
+			opacity: 0;
+
+			position: relative;
+			width: auto;
+			text-align: center;
+
+			z-index: 1;
+			padding-left: 100px;
+			display: table-cell;
+			vertical-align: middle;
+
+			color: var(--paragraph-text);
+			font-size: clamp(1rem, calc(.5vw + .55rem), 15rem);
+			
+			transition: opacity 0.2s ease-in-out;
+		}
 	}
 
 	h3{
@@ -173,6 +200,8 @@ article{
         font-size: clamp(1rem, calc(.5vw + .55rem), 15rem);
     }
 
+
+	
 	.italic{
 		font-style: italic;
 		color: var(--paragraph-text);
