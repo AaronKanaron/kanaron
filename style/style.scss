@@ -26,10 +26,12 @@ $headerImageSize: 30; //vmax
 
 
 :root {
-    --text-primary: #000000;
+    --text-primary: #1b1918;
     --paragraph-text: #1f1f1f;
+	--inverted-text: #b3b3b3;
+	--blockqoute-text: #7c7379;
+
     --background: #F9F9F9;
-    --darken-text: #b3b3b3;
     --header-color: #ececec;
     --boxshadow: #959595;
     --border-color: #e2e2e2;
@@ -46,7 +48,9 @@ $headerImageSize: 30; //vmax
 .dark {
     --text-primary: #ece4e4;
     --paragraph-text: #b6b6b6;
-    --darken-text: #262626;
+    --inverted-text: #262626;
+	--blockqoute-text: #bab4b8;
+
     --background: #212121;
     --header-color: #202020;
     --boxshadow: #121212;
@@ -56,10 +60,12 @@ $headerImageSize: 30; //vmax
 }
 
 .light {
-    --text-primary: #000000;
+    --text-primary: #1b1918;
     --paragraph-text: #1f1f1f;
+    --inverted-text: #b3b3b3;
+	--blockqoute-text: #7c7379;
+
     --background: #F9F9F9;
-    --darken-text: #b3b3b3;
     --header-color: #ececec;
     --boxshadow: #959595;
     --border-color: #e2e2e2;
@@ -199,7 +205,7 @@ article{
 	.italic{
 		font-style: italic;
 		font-size: 105%;
-		color:#7c7379;
+		color: var(--blockqoute-text);
 		line-height: 1.6em;
 
 	}

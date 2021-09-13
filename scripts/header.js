@@ -45,30 +45,30 @@ menuClose.addEventListener("click", () => {
 });
   
 
-// const themeMap = {
-//     dark: "light",
-//     light: "dark",
-// };
+const themeMap = {
+    dark: "light",
+    light: "dark",
+};
   
-// const theme = localStorage.getItem('theme')
-//     || (tmp = Object.keys(themeMap)[0],
-//         localStorage.setItem('theme', tmp),
-//         tmp);
-// const bodyClass = document.body.classList;
-// bodyClass.add(theme);
+const theme = localStorage.getItem('theme')
+    || (tmp = Object.keys(themeMap)[0],
+        localStorage.setItem('theme', tmp),
+        tmp);
+const bodyClass = document.body.classList;
+bodyClass.add(theme);
   
-// function toggleTheme() {
-//     const current = localStorage.getItem('theme');
-//     const next = themeMap[current];
+function toggleTheme() {
+    const current = localStorage.getItem('theme');
+    const next = themeMap[current];
     
-//     pressAmount+=1;
-//     bodyClass.replace(current, next);
-//     localStorage.setItem('theme', next);
-//     console.log(pressAmount)
-//     if(pressAmount >= 100){
-//         console.log("Du har klickat över 100 gånger!")
-//     }
-// }
+    pressAmount+=1;
+    bodyClass.replace(current, next);
+    localStorage.setItem('theme', next);
+    console.log(pressAmount)
+    if(pressAmount >= 100){
+        console.log("Du har klickat över 100 gånger!")
+    }
+}
 
 
-// document.getElementById('theme-toggle').onclick = toggleTheme;
+document.getElementById('theme-toggle').onclick = toggleTheme;

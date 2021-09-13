@@ -48,7 +48,7 @@ main {
   width: -moz-max-content;
   width: max-content;
   font-variant: normal;
-  color: #f6f6f6 !important;
+  color: #f6f6f6;
   display: inline-block;
 }
 
@@ -58,16 +58,26 @@ main {
   border: 2px solid #f6f6f6;
 }
 
-.recomended .hero .hero_container a {
+.recomended .hero .hero_container .button {
   text-decoration: none;
   display: inline-block;
+  padding: 8px 16px;
+}
+
+.recomended .hero .hero_container .button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.recomended .hero .hero_container .button.left {
+  rotate: 90deg;
 }
 
 .recomended .recomended_content {
   position: absolute;
   width: 100vw;
   height: 35vh;
-  background: #f6f6f6;
+  background: var(--background);
 }
 
 .recomended .recomended_content p {
@@ -78,7 +88,7 @@ main {
           transform: translateY(-50%);
   width: 60%;
   font-size: 1.5em;
-  color: #1b1918;
+  color: var(--text-primary);
 }
 
 .recomended .recomended_content .button {
@@ -88,11 +98,11 @@ main {
   text-decoration: none;
   position: absolute;
   background: transparent;
-  border: 2px solid #1b1918;
+  border: 2px solid var(--text-primary);
   border-radius: 50px;
   width: 120px;
   height: 42px;
-  color: #1b1918;
+  color: var(--text-primary);
   font-size: 1.25em;
   cursor: pointer;
   left: 15vw;
