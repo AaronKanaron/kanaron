@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 main {
   padding-top: 0;
+  padding-bottom: 50vh;
 }
 
 .recomended .hero {
@@ -58,23 +59,8 @@ main {
   border: 2px solid #f6f6f6;
 }
 
-.recomended .hero .hero_container .button {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-
-.recomended .hero .hero_container .button:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.recomended .hero .hero_container .button.left {
-  rotate: 90deg;
-}
-
 .recomended .recomended_content {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 35vh;
   background: var(--background);
@@ -107,6 +93,130 @@ main {
   cursor: pointer;
   left: 15vw;
   top: 8vh;
+}
+
+a {
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.row {
+  max-width: 100vw;
+  margin: 50px 0 0;
+}
+
+.row .card {
+  float: left;
+  padding: 0 1.7rem;
+  width: 25%;
+}
+
+.row .card .wrapper {
+  z-index: 1;
+  background-color: white;
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.row .card .wrapper:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.row .card .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.row .card .wrapper .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(calc(70px + 4em));
+          transform: translateY(calc(70px + 4em));
+  color: white;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.row .card .wrapper .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.row .card .wrapper .data .content .author {
+  font-size: 12px;
+}
+
+.row .card .wrapper .data .content .title {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  font-size: 2em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.row .card .wrapper .data .content .title a {
+  color: white;
+}
+
+.row .card .wrapper .data .content .text {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  height: 70px;
+  margin: 0;
+}
+
+.row .card .wrapper .data .content .button {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+.row .card .wrapper .data .content .button::after {
+  content: '\2192';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.row .card .wrapper .data .content .button:hover::after {
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
+  opacity: 1;
 }
 
 /*=--------=*/
