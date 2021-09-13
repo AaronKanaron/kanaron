@@ -252,15 +252,6 @@ article.sources p {
   font-weight: 800;
 }
 
-h1 {
-  color: var(--text-primary);
-  text-align: center;
-  font-size: clamp(0.5rem, calc(2vw + 1.5rem), 15rem);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-variant: small-caps;
-}
-
 a {
   color: var(--text-primary);
 }
