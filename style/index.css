@@ -34,8 +34,15 @@ main {
 
 .recomended .hero .hero_container h2 {
   margin-top: .2em;
-  font-size: clamp(0.5rem, calc(2vw + 2rem), 15rem);
+  font-size: clamp(0.5rem, calc(3vw + 2rem), 15rem);
   font-family: 'Lora', serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-width: 80%;
   position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
