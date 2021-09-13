@@ -52,12 +52,17 @@ main{
 				width: max-content;
 				font-variant: normal;
 				color: #f6f6f6 !important;
+				display: inline-block;
 
 			}
 			hr{
 				margin: auto;
 				width: 98%;
 				border: 2px solid #f6f6f6;
+			}
+			a{
+				text-decoration: none;
+				display: inline-block;
 			}
 		}
 	}
