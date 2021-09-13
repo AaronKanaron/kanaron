@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
-name = "No Kemi 7.1"
-image = "https://merchantsandmechanics.files.wordpress.com/2017/12/manchester-2.jpg?w=900"
+name = "Murphys lag"
+image = "https://fof.se/sites/fof.se/files/styles/full/public/bild/istock-149415526.jpg?itok=dwpxTL6L"
 
 htmlDoc = ("""
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ htmlDoc = ("""
 					<!-- <li><a class="active" href="#">Startsida</a></li> -->
 					<li><a href="../about.html">Om Sidan</a></li>
 					<li><a href="../vanlig.html">Vanlig Stad</a></li>
-					<li><a class="active" href="articles.html">Artiklar</a></li>
+					<li><a class="active" href="../articles/articles.html">Artiklar</a></li>
 				</ul>
 			</nav>
 			<button id="theme-toggle" aria-label="Switch to dark theme">
