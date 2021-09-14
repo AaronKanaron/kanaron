@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
 main {
   padding-top: 0;
@@ -35,14 +35,8 @@ main {
 
 .recomended .hero .hero_container h2 {
   margin-top: .2em;
-  font-size: clamp(0.5rem, calc(3vw + 2rem), 15rem);
+  font-size: clamp(0.4rem, calc(2vw + 2rem), 15rem);
   font-family: 'Lora', serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: initial;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   max-width: 80%;
   position: relative;
   width: -webkit-max-content;
@@ -67,6 +61,13 @@ main {
   background: var(--background);
 }
 
+@media only screen and (max-width: 600px) {
+  .recomended .recomended_content p {
+    width: 90%;
+    right: 0vw;
+  }
+}
+
 .recomended .recomended_content p {
   position: absolute;
   right: 15vw;
@@ -76,13 +77,6 @@ main {
   width: 60%;
   font-size: clamp(0.1rem, calc(.4vw + 1rem), 9rem);
   color: var(--text-primary);
-}
-
-@media only screen and (max-width: 600px) {
-  .recomended .recomended_content p {
-    width: 90%;
-    right: 0vw;
-  }
 }
 
 .recomended .recomended_content .button {
