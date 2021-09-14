@@ -12,7 +12,7 @@
         
         <!-- Links -->
         <link rel="stylesheet" href="./style/style.css" />
-        <link rel="stylesheet" href="./style/vanlig.css" />
+        <!-- <link rel="stylesheet" href="./style/vanlig.css" /> -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
         <link rel="icon" href="./images/icon.ico">
         <!-- Title -->
@@ -21,13 +21,13 @@
       
     <body>
         <header id="header">
-            <p class="logo">kanaron
+            <a href="index.html" class="logo">kanaron</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Startsida</a></li>
-                    <li><a href="about.html">Om Sidan</a></li>
-                    <li><a class="active" href="#">Vanlig Stad</a></li>
-                    <li><a href="articles/articles.html">Artiklar</a></li>
+                    <!-- <li><a class="active" href="#">Startsida</a></li> -->
+                    <li><a href="#">Om Sidan</a></li>
+                    <li><a href="vanlig.html">Vanlig Stad</a></li>
+                    <li><a class="active" href="articles/articles.html">Artiklar</a></li>
                 </ul>
             </nav>
             <button id="theme-toggle" aria-label="Switch to dark theme">
@@ -45,15 +45,19 @@
         <div id="mobile__menu" class="overlay">
             <a class="close">&times;</a>
             <div class="overlay-content">
-                <a href="index.html">Startsida</a>
-                <a href="about.html">Om Sidan</a>
-                <a class="active" href="#">Vanlig Stad</a>
-                <a href="articles/articles.html">Artiklar</a>
+                <a href="#">Om Sidan</a>
+                <a href="vanlig.html">Vanlig Stad</a>
+                <a class="active" href="articles/articles.html">Artiklar</a>
             </div>
         </div>
 
         <main>
-            <h1>Hejsan</h1>
+			<article class="main Center">
+				<section data-scroll>
+					<h1>Sluta ass upp!</h1>
+					<p>bruhrbruhrb</p>
+				</section>
+			</article>
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>

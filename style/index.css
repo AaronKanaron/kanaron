@@ -28,7 +28,7 @@ main {
 }
 
 .recomended .hero .hero_container {
-  padding-top: 40vh;
+  padding-top: 50vh;
   width: 70vw;
   margin: auto;
 }
@@ -55,7 +55,7 @@ main {
 
 .recomended .hero .hero_container hr {
   margin: auto;
-  width: 98%;
+  width: 100%;
   border: 2px solid #f6f6f6;
 }
 
@@ -63,6 +63,7 @@ main {
   position: relative;
   width: 100vw;
   height: 35vh;
+  overflow: hidden;
   background: var(--background);
 }
 
@@ -73,8 +74,15 @@ main {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 60%;
-  font-size: 1.5em;
+  font-size: clamp(0.1rem, calc(.4vw + 1rem), 9rem);
   color: var(--text-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  .recomended .recomended_content p {
+    width: 90%;
+    right: 0vw;
+  }
 }
 
 .recomended .recomended_content .button {
@@ -86,8 +94,8 @@ main {
   background: transparent;
   border: 2px solid var(--text-primary);
   border-radius: 50px;
-  width: 120px;
-  height: 42px;
+  width: 150px;
+  height: 50px;
   color: var(--text-primary);
   font-size: 1.25em;
   cursor: pointer;
@@ -107,8 +115,14 @@ a {
 
 .row .card {
   float: left;
-  padding: 0 1.7rem;
+  padding: 1.75rem 1.75rem;
   width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .card {
+    width: 100%;
+  }
 }
 
 .row .card .wrapper {

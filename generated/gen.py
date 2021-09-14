@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
-name = "Murphys lag"
-image = "https://fof.se/sites/fof.se/files/styles/full/public/bild/istock-149415526.jpg?itok=dwpxTL6L"
+name = "Bantufolket"
+image = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mesehtisoldiers.JPG/1280px-Mesehtisoldiers.JPG"
 
 htmlDoc = ("""
 <!DOCTYPE html>
