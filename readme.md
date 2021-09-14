@@ -51,10 +51,11 @@ Sidan är gjord med SCSS och vanilla JS. En av mina första projekt och används
 Exprimenterar mycket med layouted och CSS'en så ändrar kan hända ofta.
 
 <h2 id="problems"> ❌ Kända Problem </h2>
-- [ ] Index har mycket problem med mobiltelefoner, kända problem är ´recomended-content´ text har konstig layout och täcker hela den biten av sidan.
-- [ ] Alla artiklar har problem med hero-bilderna, det kan klippa igenom bakgrunden och annat.
 
-### Om du hittar ett annat problem, snälla skriv in det på https://github.com/AaronKanaron/kanaron/issues för att rapportera problemet
+- [ ] Index har mycket problem med mobiltelefoner, kända problem är ´recomended-content´ text har konstig layout och täcker hela den biten av sidan.
+
+- [ ] Alla artiklar har problem med hero-bilderna, det kan klippa igenom bakgrunden och annat.
+<h3> Om du hittar ett annat problem, snälla skriv in det på https://github.com/AaronKanaron/kanaron/issues för att rapportera problemet </h3>
 
 <!-- 
 ## ✨ Features ##
