@@ -37,7 +37,19 @@ h1 {
   width: 25%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 3750px) {
+  .row .card {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .row .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
   .row .card {
     width: 100%;
   }
@@ -95,6 +107,15 @@ h1 {
 }
 
 .row .card .wrapper .data .content .title {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  font-size: 2em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-weight: 300;
   margin-top: 10px;
 }
 

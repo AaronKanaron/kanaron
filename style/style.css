@@ -154,9 +154,10 @@ article h2 {
 article h3 {
   color: var(--text-primary);
   text-align: left;
-  font-size: clamp(1.3rem, calc(1.1vw + .3rem), 15rem);
+  padding-top: 10px;
   font-weight: 400;
-  padding-top: 2rem;
+  font-size: 1.7em;
+  line-height: 1.5em;
 }
 
 article h4 {

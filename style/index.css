@@ -122,7 +122,19 @@ a {
   width: 25%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 3750px) {
+  .row .card {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .row .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
   .row .card {
     width: 100%;
   }
