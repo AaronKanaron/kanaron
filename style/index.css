@@ -58,14 +58,7 @@ main {
   width: 100vw;
   height: 35vh;
   overflow: hidden;
-  background: var(--background);
-}
-
-@media only screen and (max-width: 600px) {
-  .recomended .recomended_content p {
-    width: 90%;
-    right: 0vw;
-  }
+  background: var(--section);
 }
 
 .recomended .recomended_content p {
@@ -93,8 +86,24 @@ main {
   color: var(--text-primary);
   font-size: 1.25em;
   cursor: pointer;
-  left: 15vw;
+  left: clamp(1vw, 15vw, 30vw);
   top: 8vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .recomended .recomended_content p {
+    width: 90vw;
+    right: 0vw;
+  }
+  .recomended .hero {
+    height: 50vh;
+  }
+  .recomended .hero .hero_container {
+    padding-top: 40vh;
+  }
+  .recomended .recomended_content {
+    height: 50vh;
+  }
 }
 
 a {
