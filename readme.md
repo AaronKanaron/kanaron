@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="New Redesigned" />
+  <img src="https://i.imgur.com/7SuUivM.png" alt="Kanaron" />
 
   &#xa0;
 
