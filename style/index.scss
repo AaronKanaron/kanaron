@@ -114,9 +114,16 @@ main{
 	@media only screen and (max-width: 600px){
 		.recomended_content {
 			p{
-				
+				mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 35vh);
 				width: 90vw;
+				left: 50%;
+				transform: translateX(-50%);
 				right: 0vw;
+			}
+			.button{
+				left: 50%;
+				transform: translateX(-50%);
+				top: 80%;
 			}
 		}
 		.hero{
