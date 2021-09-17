@@ -84,6 +84,7 @@ main {
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
+  z-index: 100;
   text-decoration: none;
   position: absolute;
   background: transparent;

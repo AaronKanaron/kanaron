@@ -91,7 +91,7 @@ main{
 		}
 		.button{
 			appearance: button;
-
+			z-index: 100;
     		text-decoration: none;
 			position: absolute;
 			background: transparent;
