@@ -35,7 +35,7 @@ main {
 
 .recomended .hero .hero_container h2 {
   margin-top: .2em;
-  font-size: clamp(0.4rem, calc(2vw + 2rem), 15rem);
+  font-size: clamp(0.4rem, calc(2vw + 2rem), 4.5rem);
   font-family: 'Lora', serif;
   max-width: 80%;
   position: relative;

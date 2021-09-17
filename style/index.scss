@@ -47,7 +47,8 @@ main{
 			// }
 			h2{
 				margin-top: .2em;
-				font-size: clamp(.4rem, calc(2vw + 2rem), 15rem);
+				font-size: clamp(.4rem, calc(2vw + 2rem), 4.5rem);
+				// font-size: clamp(2.5rem,4vw,15rem);
 				font-family: 'Lora', serif;
 
 				max-width: 80%;
