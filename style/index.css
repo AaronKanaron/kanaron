@@ -63,13 +63,21 @@ main {
 
 .recomended .recomended_content p {
   position: absolute;
-  right: 15vw;
+  right: 10vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 60%;
-  font-size: clamp(0.1rem, calc(.4vw + 1rem), 9rem);
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
   color: var(--text-primary);
+}
+
+@media only screen and (max-width: 1350px) {
+  .recomended .recomended_content p {
+    top: 5vh;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 .recomended .recomended_content .button {
@@ -86,7 +94,7 @@ main {
   color: var(--text-primary);
   font-size: 1.25em;
   cursor: pointer;
-  left: clamp(1vw, 15vw, 30vw);
+  right: 75vw;
   top: 8vh;
 }
 
@@ -132,18 +140,24 @@ a {
   .row .card {
     width: 50%;
   }
+  .row .card .wrapper {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 625px) {
   .row .card {
     width: 100%;
   }
+  .row .card .wrapper {
+    height: 70vh;
+  }
 }
 
 .row .card .wrapper {
   z-index: 1;
   background-color: white;
-  min-height: 540px;
+  min-height: 60vh;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);

@@ -75,14 +75,18 @@ main{
 		background: var(--section);
 		
 		p{
-			
+			@media only screen and (max-width: 1350px){
+				top: 5vh;
+				transform: translate(0);
+			}
 			position: absolute;
-			right: 15vw;
+			right: 10vw;
 			top: 50%;
 			transform: translateY(-50%);
 			width: 60%;
-			font-size: clamp(.1rem, calc(.4vw + 1rem), 9rem);
+			font-size: clamp(1.2rem, 1.2vw, 2rem);
 			color: var(--text-primary);
+
 		}
 		.button{
 			appearance: button;
@@ -100,8 +104,9 @@ main{
 			font-size: 1.25em;
 			
 			cursor: pointer;
+			right: 75vw;
 
-			left: clamp(1vw, 15vw, 30vw);
+			// right: clamp(1vw, 15vw, 30vw);
 			top: 8vh;
 		}
 	}
@@ -109,6 +114,7 @@ main{
 	@media only screen and (max-width: 600px){
 		.recomended_content {
 			p{
+				
 				width: 90vw;
 				right: 0vw;
 			}
@@ -136,9 +142,9 @@ a{
 	.card{
 		@media only screen and (min-width: 3750px){ width: 12.5%;}
 
-		@media only screen and (max-width: 1250px){ width: 50%;}
+		@media only screen and (max-width: 1250px){ width: 50%; .wrapper{ height: 70vh; }}
 
-		@media only screen and (max-width: 625px){ width: 100%;}
+		@media only screen and (max-width: 625px){ width: 100%; .wrapper{ height: 70vh; }}
 
 		float: left;
 		padding: 1.75rem 1.75rem;
@@ -147,7 +153,7 @@ a{
 		.wrapper{
 			z-index: 1;
 			background-color: white;
-			min-height: 540px;
+			min-height: 60vh;
 			position: relative;
 			overflow: hidden;
 			box-shadow: 0 19px 38px rgba(black, 0.3), 0 15px 12px rgba(black, 0.2);
